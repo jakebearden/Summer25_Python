@@ -1,17 +1,25 @@
+import random
+number = random.randint(1,100)
+def welcome_user():
+    print ("Welcome to my guess the number game, you have 5 lives\n")
+    print("guess a number 1-100\n")
 
-print ("Welcome to my guess the number game, you have 5 lives")
-print("guess a number 1-100")
-number = 72
+def run_game():
+    for i in range(5):
+        print("guess a number 1-100\n")
+        guess = int(input("Enter Guess "))
+        if(guess == number):
+            print("you win!!!")
+            break
+        elif(guess < number):
+            print("higher\n")
+        elif(guess > number):
+            print("lower\n")
+        else:
+            continue
 
-for i in range(5):
-    print("guess a number 1-100")
-    guess = input("Enter Guess")
-
-    if(guess == number):
-        print("you win!!!")
-
-    else:
-        continue
 
 
-
+welcome_user()
+run_game()
+print(number)
