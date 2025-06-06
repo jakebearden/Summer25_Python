@@ -1,0 +1,17 @@
+
+print ("Welcome to my guess the number game, you have 5 lives")
+print("guess a number 1-100")
+number = 72
+
+for i in range(5):
+    print("guess a number 1-100")
+    guess = input("Enter Guess")
+
+    if(guess == number):
+        print("you win!!!")
+
+    else:
+        continue
+
+
+
